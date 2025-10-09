@@ -617,7 +617,7 @@ body > * {
 
 .nma-eyebrow {
     font-size: .875rem;
-    font-weight: bold;
+    font-weight: bold; 
     text-transform: var(--unit-xs);
     line-height: 1;
 }

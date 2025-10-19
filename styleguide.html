@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KCC New Media Arts - Framework | Style Guide</title>
+    <title>Cha to Gelato Zen - Framework | Style Guide</title>
     <meta name="description" content="A simple HTML CSS and JS starter base">
 
+    <!-- SWIPER CSS - put at the top inside of your head -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,18 +23,29 @@
         <div class="logo">
 
             <!-- INLINE SVG LOGO EXAMPLE -->
-            <!-- <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <circle cx="250" cy="250" r="250" style="fill:#3b82f6"/>
-            </svg></a> -->
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <circle cx="250" cy="250" r="250" style="fill:#3b82f6"/>
+                </svg>
+                <span class="visually-hidden">Cha to gelato zen logo</span>
+            </a>
 
             <!-- INLINE IMG LOGO EXAMPLE -->
-             <a href="index.html"><img src="img/logo.png" alt="LOGO" alt="Simple Base Logo" width="200" height="50"></a>
+             <!-- <a href="index.html"><img src="img/logo.png" alt="LOGO" alt="Simple Base Logo" width="200" height="50"></a> -->
 
-            <h1 class="hide-visually"><a href="index.html">Style Guide</a></h1>
+            <h1 class="hide-visually"><a href="index.html">Cha to Gelato Zen</a></h1>
 
         </div> 
 
         <nav class="site-nav">
+            <button class="menubutton">
+                <span class="hide-visually">Menu</span>
+                <svg class="simple-navicon" width="24" height="21">
+                    <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+                    <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+                    <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+                </svg>
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="styleguide.html">Style Guide</a></li>
@@ -59,7 +73,7 @@
 
                     <div class="pagesection-aside">
 
-                        <div class="stickybox">
+                    <div class="stickybox">
 
                             <h2>Table of Contents</h2>
                             <nav>
@@ -104,9 +118,118 @@ sitename/
 
                         <h3>Colors</h3>
 
-                        <h4>Primary Blues (eg Brand color)</h4>
+                        <!-- <h4>Primary Blues (eg Brand color)</h4> -->
 
-                        <div class="card">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+
+                                <!-- Slides -->
+                                    <div class="swiper-slide">
+                                    
+                                        <div class="card">
+                                            <div class="color-swatch" style="--_swatch-color: #dbeafe;"></div>
+                                            <div class="color-info">
+                                                <p>Light Blue<br>
+                                                --color-blue-100<br>
+                                                #dbeafe
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="color-swatch" style="--_swatch-color: #3b82f6;"></div>
+                                        <div class="color-info">
+                                            <p>Blue<br>
+                                            --color-blue-400<br>
+                                            #3b82f6
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="color-swatch" style="--_swatch-color: #1e40af;"></div>
+                                        <div class="color-info">
+                                            <p>Dark Blue<br>
+                                            --color-blue-900<br>
+                                            #1e40af
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="color-swatch" style="--_swatch-color: #22c55e;"></div>
+                                        <div class="color-info">
+                                            <p>Green<br>
+                                            --color-green-400<br>
+                                            #22c55e
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                    
+                                        <div class="card">
+                                            <div class="color-swatch" style="--_swatch-color: #dbeafe;"></div>
+                                            <div class="color-info">
+                                                <p>Light Blue<br>
+                                                --color-blue-100<br>
+                                                #dbeafe
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="color-swatch" style="--_swatch-color: #3b82f6;"></div>
+                                            <div class="color-info">
+                                                <p>Blue<br>
+                                                --color-blue-400<br>
+                                                #3b82f6
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="color-swatch" style="--_swatch-color: #1e40af;"></div>
+                                            <div class="color-info">
+                                                <p>Dark Blue<br>
+                                                --color-blue-900<br>
+                                                #1e40af
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="color-swatch" style="--_swatch-color: #22c55e;"></div>
+                                            <div class="color-info">
+                                                <p>Green<br>
+                                                --color-green-400<br>
+                                                #22c55e
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+
+                        <!-- <div class="card">
                             <div class="color-swatch" style="--_swatch-color: #dbeafe;"></div>
                             <div class="color-info">
                                 <p>Light Blue<br>
@@ -146,7 +269,7 @@ sitename/
                                 #22c55e
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
 
                         <pre><code>
 :root {
@@ -189,6 +312,10 @@ sitename/
 
                         <h2 id="button">Buttons</h2>
                         <a href="#" class="button">Default button</a>
+
+                         <pre><code>
+&lt;a href="#" class="button"&gt;Default button&lt;/a&gt;                            
+                        </code></pre>
 
                         <hr>
 
@@ -409,10 +536,18 @@ sitename/
 
                         <h2 id="typeblock">NMA Type Block</h2>
 
-                        <div class="nma-eyebrow">NMA Eybrow</div>
-                        <h3 class="nma-headline">NMA Cha Headline</h3>
-                        <h4 class="nma-subheadLine">NMA Cha SubHeadline</h4>
+                        <div class="nma-eyebrow">Zen Eybrow</div>
+                        <h3 class="nma-headline">Zen Headline</h3>
+                        <h4 class="nma-subheadLine">Zen SubHeadline</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem repellendus dolor blanditiis quam possimus ducimus, labore nobis illo accusamus?</p>
+
+                        <pre><code>
+&lt;div class="nma-eyebrow"&gt;NMA Eyebrow&lt;/div&gt;
+&lt;h3 class="nma-headline"&gt;NMA Custom Headline&lt;/h3&gt;
+&lt;h4 class="nma-subheadline"&gt;NMA Custom SubHeadline&lt;/h4&gt;
+                        </code></pre>
+
+                        <hr>
                         
                     </div>
 
@@ -438,7 +573,7 @@ sitename/
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="documentation.html">Style Guide</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -448,9 +583,34 @@ sitename/
         </div>
     </footer>
 
+    <!-- SWIPER JS - put at the bottom inside of your body -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <script>
+         const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 10,
+    //   centeredSlides: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+    </script>
 
     <!-- MAIN JS -->
     <script src="js/script.js"></script>
+
 
 </body>
 

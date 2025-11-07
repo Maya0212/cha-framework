@@ -73,7 +73,7 @@ TABLE OF CONTENTS
     --color-green-900: #004419;
 
     /* DEFINE SEMANTIC COLORS */
-    --color-body-background: var(--color-white);
+    --color-body-background: #F5F3EC;
     --color-body-text: var(--color-black-80);
     --color-body-text-dark: var(--color-black);
 
@@ -114,8 +114,8 @@ TABLE OF CONTENTS
     --container-width: 1100px;
 
     /* GLOBAL FONTS */
-    --font-body: system-ui, Helvetica, arial, sans-serif;
-    --font-headings: Georgia, Times, "Times New Roman", serif;
+    --font-body: "Molengo", system-ui, Helvetica, arial, sans-serif;
+    --font-headings: "Libre Caslon Display", Georgia, Times, "Times New Roman", serif;
 
 }
 
@@ -294,10 +294,23 @@ html {
     .push-11 { grid-column-start: 12; }           
 }
 
+.one-third {
+  display: flex;           /* 横並びにする */
+  justify-content: center; /* 中央寄せ（オプション） */
+  align-items: center;     /* 縦位置をそろえる（オプション） */
+  gap: 10px;               /* 画像の間にすき間を入れる */
+}
+
+.one-third img {
+  width: 33%;              /* 3等分にしたい場合 */
+  height: auto;            /* 比率を保つ */
+}
+
+
 
 /* FOR DEMO PURPOSES ONLY */
 .row.demo > * {
-    background-color: #eee;
+    background-color: #F5F3EC;
     text-align: center;
     padding: var(--unit-s);
 }
@@ -479,6 +492,31 @@ section {
     background-color: var(--color-hero-background);
     padding-block: var(--unit-3xl);
     padding-inline: var(--unit-s);
+    background-image: url(../img/top-page.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    
+    h1 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    h2 {
+    font-family: "Long Cang", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--unit-2xl);    
+    }
+    
+    h3 {
+    opacity: 80;
+    }
+    
+    h1, h2, h3 {
+        color: #fff;
+    }
 }
 
 .hero:has(.container) {
@@ -599,12 +637,14 @@ body > * {
 }
 
 /* RENDER HEADER ON TOP OF HERO */
-.site-header.on-top-of-here {
+.site-header.on-top-of-hero {
     position: absolute;
     width: 100%;
+    background-color: transparent;
+    border: 1px solid red;
 }
 
-.site-header.on-top-of-here + .site-main .hero {
+.site-header.on-top-of-hero + .site-main .hero {
     padding-block-start: calc(var(--unit-3xl) + var(--unit-xl));
 }
 
